@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskLister</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ShitLister</h1>
+    <form id="create-task-form" action="#" method="POST">
+        <label for="new-task-description">Shit description:</label>
+        <input
+            type="text"
+            id="new-task-description"
+            name="Your shit"
+            placeholder="Shit that needs to be done"
+        />
+        <label for="task-priority">Priority:</label>
+        <select id="task-priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            <option value="ShitAboutToGoDown"> shit about to go down</option>
+            <option value="ItsNotThatBad">it's not that bad</option>
+        </select>
+        <input type="submit" value="Create New Shit" />
+    </form>
+    <ul id="tasks"></ul>
+    <script src="./TaskToDo.js"></script>
+</body>
+</html>
